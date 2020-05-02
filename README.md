@@ -1,6 +1,13 @@
 # MERN Boiler Plate
 
-A boiler plate to start your MERN journey.
+A boiler plate to start your MERN journey.<br/>
+cd server<br/>
+npm install<br/>
+cd client<br/>
+npm install<br/>
+
+Start coding
+
 <br />
 I will flesh this out into a full tutorial later on<br/>
 CD into the server side and run: <br/>
