@@ -1,5 +1,7 @@
 # MERN Boiler Plate
 
+![](/MERNG-1.png)
+
 A boiler plate to start your MERN journey.<br/>
 cd server<br/>
 npm install<br/>
