@@ -1,18 +1,23 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "building boilerplate app using mongodb, express, react and nodejs",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start-watch": "nodemon server.js",
+    "dev": "concurrently \"yarn run start-watch\" \"cd ../client && yarn start\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "JoseMiguel Marte",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.10",
     "nodemon": "^2.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
   }
 }
