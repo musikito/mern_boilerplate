@@ -12,8 +12,10 @@ router.route("/").get((req, res, next) => {
 // add a user route
 router.route("/add").post((req, res, next) => {
   const username = req.body.username;
+  const name = req.body.name;
+  const email = req.body.email;
 
-  const newUser = new User({ username });
+  const newUser = new User({ name, username, email });
 
   newUser
     .save()
