@@ -5,15 +5,14 @@ const todoSchema = new Schema(
   {
     action: {
       type: String,
-      required: [true, "The todo text field is requiered"],
+      required: [true, "The todo text field is required"],
     },
     username: {
       type: String,
-      required: [true, "The username field is requiered"],
+      required: [true, "The username field is required"],
     },
     dateCompleted: {
       type: Date,
-      required: [true, "The completed date field is requiered"],
     },
   },
   {

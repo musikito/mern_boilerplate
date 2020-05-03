@@ -27,6 +27,10 @@ router.route("/add").post((req, res, next) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 // remove/delete a todo
-router.route("/delete/:id").delete((req, res, next) => {});
+router.route("/delete/:id").delete((req, res, next) => {
+  Todos.findByIdAndDelete("_id")
+    .then(() => res.json("todo deleted!"))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
 
 module.exports = router;

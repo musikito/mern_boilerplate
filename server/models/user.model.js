@@ -8,7 +8,7 @@ const userSchema = new Schema(
       required: [true, "The username field is requiered"],
       unique: true,
       trim: true,
-      minlength: 8,
+      minlength: [7, "The username shoulb be at least 7 characters"],
     },
   },
   {
